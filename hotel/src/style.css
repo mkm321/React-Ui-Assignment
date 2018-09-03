@@ -1,0 +1,268 @@
+* {
+	padding: 0;
+	margin: 0;	
+    
+}
+.heading{
+    margin-left: 20px;
+    font-size: 2.2em;
+}
+
+.Header {
+    height: 100px;
+    background-color: #000000;
+}
+
+.Inside-header {
+    display: flex;
+    align-items: row;
+    flex-flow: row wrap;
+}
+
+.logo {
+    width: 130px;
+    height: 100px;
+    flex: 1;
+}
+
+.middle {
+    flex: 8;
+    background-color: #201F1FB9;
+}
+
+.navigator {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	display: flex;
+	flex-wrap: wrap;
+    background-color: #201F1F;
+    color: #FFFFFF;
+    font-family: Comic Sans MS;
+}
+
+.side-Nav {
+    width: 10vw;
+    min-width:110px;
+	justify-content: center;
+	align-items: center;
+    height: 27.7%;
+    border: 0;
+    background-color:red;
+}
+
+.item-model {
+	display: none;
+}
+
+.check {
+    cursor: pointer;
+	padding: 1rem;
+    margin-bottom: 4px;
+	font-weight: bold;
+    background: #555555;
+    box-shadow: 0px 0px 7px 0.1em #000000;
+    text-align: center;
+}
+
+.check:hover {
+    color: #000000;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 0.1em #FFFFFF;
+    z-index: 9;
+	background-color: #c6c6c6;
+    font-size: 1.2em;
+}
+
+.Book {
+    
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.button-container {
+	display: flex;
+    width: 60vw;
+	align-content: centre;
+	flex-wrap: column wrap;
+}
+
+.primary-container {
+	width: 13vw;
+    margin-right: 4px;
+    height: 40px;
+}
+.item-name {
+	width: 13vw;
+	cursor: pointer;
+    margin-left: 3px;
+    border: 0;
+    color: #FFFFFF;
+    height: 40px;
+    background: #555555;
+    box-shadow: 0px 0px 7px 0.1em #000000;
+}
+.item-name:hover{
+    box-shadow: 0px 0px 10px 0.1em #FFFFFF;
+    z-index: 9;
+	background-color: #c6c6c6;
+    color: #000000;
+    font-size: 1.1em;
+}
+
+.description {
+	height: 5rem;
+	width: 60vw;
+    margin-left: 30px;
+    min-width: 300px;
+	font-size: 1rem;
+
+}
+
+.primary-button {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    
+}
+
+.item-types {
+	display: flex;
+	width: 10vw;
+    margin-top: 5px;
+    margin-left: 25px;
+	padding: 0.2rem;
+}
+
+.item-sub-type-heading {
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.item-sub-type-body {
+	margin: 0 auto;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+.item-sub-type-body:hover{
+	color: #000000;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 0.1em #FFFFFF;
+	z-index: 9;
+	width: 90%;
+	background-color: #c6c6c6;
+    font-size: 1.2em;
+}
+
+.book-now {
+	background: #009900;
+    border: 0;
+    height: 45px;
+    font-size: 1em;
+}
+.book-now:hover{
+    background: #00FF00;
+    font-size: 1.1em;
+}
+.book-now:active{
+    background: #00FF00;
+    font-size: 1.1em;
+}
+.book-on-avail {
+	background: #CDA000;
+    border: 0;
+    height: 45px;
+    font-size: 1em;
+}
+.book-on-avail:hover{
+    background: #CDF000;
+    font-size: 1.1em;
+}
+
+.not-avail {
+	background: #C2132E;
+    border: 0;
+    height: 45px;
+    font-size: 1em;
+}
+.not-avail:hover{
+    background: #e01111;
+    font-size: 1.1em;
+}
+
+.search {
+	background: #A03E67;
+    border: 0;
+    height: 45px;
+    font-size: 1em;
+}
+.search:hover{
+    background: #c43182;
+    font-size: 1.2em;
+}
+
+.resultcontainer {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+    margin-left: 32px;
+	height: 19rem;
+	border: 0.1rem double #333333;
+	flex-wrap: column wrap;
+}
+
+.logo-image {
+	width: 7rem;
+	height: 6rem;
+}
+.logo-image:hover{
+    transition: width 1s , height 0.7s;
+    width: 9rem;
+    height: 8rem;
+}
+.main-container{
+    display: flex;
+    flex-wrap: column wrap;
+    width: 400px;
+    flex-direction: column;
+}
+
+button {
+	font-weight: bold;
+	width: 12rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.searchbox {
+    border: 0;
+	height: 3rem;
+	width: 25rem;
+}
+.searchbox:hover{
+    background: #EEEEEE;
+    border: 0;
+    font-size: 1em;
+    box-shadow: 0px 0px 3px 0.1em #FFFFFF;
+}
+.content-Area {
+	margin: 0.1rem;
+    width: 60vw;
+}
+
+.side-Nav {
+	margin: 0.1rem;
+}
+
+.item-description {
+	display: none;
+}
+

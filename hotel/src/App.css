@@ -1,0 +1,244 @@
+.header {
+    display: flex;
+    width: 100%;
+    align-items: row;
+    flex-flow: row wrap;
+    background: #000000;
+    min-width: 430px;
+}
+
+.logo {
+    width: 130px;
+    height: 100px;
+    flex: 1;
+}
+
+.middle {
+    flex: 8;
+    background-color: #201F1FB9;
+}
+
+a.description {
+    flex: 1;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 30px;
+    height: 40px;
+    width: 4vw;
+    background-color: #000000;
+    font-size: 1.4em;
+    border: 20px;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.description:hover {
+    color: #000000;
+    font-weight: bolder;
+    box-shadow: 0px 0px 20px 0.2em #FFFFFF;
+    z-index: 9;
+	background-color: #c6c6c6;
+}
+
+.Inside-search {
+    margin-bottom: 20px;
+    display: flex;
+    height: 80%;
+    align-items: row;
+    flex-flow: row wrap;
+    padding: 3vw 2.5vw;
+    box-shadow: 0px 0px 16px 0.1em #999999;
+    min-height: 80px;
+    min-width: 430px;
+}
+
+.hotelName {
+    flex: 1.5;
+    margin-left: 60px;
+    height: 3vw;
+    font-size: 1em;
+    padding-left: 20px;
+    min-width: 260px;
+    min-height: 20px;
+
+}
+
+.searchbutton {
+    flex: 0.3;
+    height: 3vw;
+    border: 0;
+    background: #f3609d;
+    color: white;
+    font-size: 1.2em;
+    margin-right: 40px;
+    margin-left: 60px;
+    min-height: 30px;
+    margin-top: 3px;
+}
+
+.searchbutton:hover {
+    background: #a03e67;
+    color: white;
+}
+
+.dateRange {
+    flex: 2;
+    display: flex;
+    align-items: row;
+    flex-flow: row wrap;
+    height: 40px;
+}
+
+.Date {
+    text-align: center;
+    font-size: 1em;
+    margin-left: 60px;
+    height: 3vw;
+    width: 190px;
+    min-height: 20px;
+}
+
+.Inside-display {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row;
+    flex-wrap: row wrap;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 15px 0.1em #ace7b4;
+    width: 98%;
+	min-width: 430px;
+    height:14vw;
+    min-height: 180px;
+}
+.scroll{
+    overflow-y: scroll;
+    position: fixed;
+    top: 31%;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    min-width: 430px;
+}
+
+.HotelLogo {
+    flex: 1;
+	
+}
+.LogoImg{
+	height:14vw;
+    width: 20vw;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.HotelNameRatings {
+    flex: 2.5;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: column wrap;
+}
+
+.buttons {
+    flex: 1;
+}
+
+.HotelName {
+    flex: 1;
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 10px 5px;
+}
+
+.HotelAddress {
+    flex: 1;
+    font-style: italic;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.rating {
+    flex: 1;
+    font-size: 1.7em;
+}
+
+.available-button {
+    margin-top:50px;
+    height: auto;
+    min-height: 50px;
+    word-wrap: break-word;
+    width: 15vw;
+    background: #21881D;
+	font-size: 1.1em;
+	font-weight: bolder;
+	border: 0;
+}
+.available-button:active{
+	background: #00ff00;
+}
+.partially-available-button {
+    margin-top:50px;
+    height: auto;
+    min-height: 50px;
+    word-wrap: break-word;
+    width: 15vw;
+    background: #D9E213;
+	font-size: 1.1em;
+	font-weight: bolder;
+	border: 0;
+}
+.partially-available-button:active{
+	background: #cda000; 
+}
+
+.not-available-button:active{
+	background: #ff0000;
+}
+
+.not-available-button {
+    margin-top:50px;
+    height: auto;
+    min-height: 50px;
+    word-wrap: break-word;
+    width: 15vw;
+    background: #C2132E;
+	font-size: 1.1em;
+	font-weight: bolder;
+	border: 0;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+}
+.copyRights{
+    background: #555555;
+    width: 100%;
+    height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: verdana;
+    font-size: 1.1em;
+}
+.dates{
+    color: #0c7ae0;
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+.to-from{
+    color: #000000;
+}
+.no-match{
+    color: #000000;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 5% 35%;
+    margin: 0 auto;
+
+}
