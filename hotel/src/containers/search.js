@@ -14,7 +14,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 class Search extends Component {
     searchHotels = (event) => {
         event.preventDefault();
-        if((this.props.fromDate !== "" && this.props.toDate !== "") || (this.props.hotelName !== "" && this.props.fromDate === "" && this.props.toDate === "") || (this.props.hotelName === "" && this.props.fromDate === "" && this.props.toDate === ""))
+        if((this.props.fromDate !== null && this.props.toDate !== null) || (this.props.hotelName !== "" && this.props.fromDate === null && this.props.toDate === null) || (this.props.hotelName === "" && this.props.fromDate === null && this.props.toDate === null))
             this.props.searchHotels(this.props);
         else
             alert("Please select 'To-Date' ");      
@@ -24,12 +24,17 @@ class Search extends Component {
         this.props.updateName(event.target.value);     
     }
 
-    handleChangefromDate = (date) => {
-        this.props.updateFromDate(date, "", false);
+    handleChangefromDate = (fromDate) => {
+        let disabledToDate = false, toDate = this.props.toDate;
+        if(fromDate === null)
+            disabledToDate = true;
+        if(fromDate > toDate)
+            toDate = fromDate;
+        this.props.updateFromDate(fromDate, toDate, disabledToDate);
     }
 
-    handleChangeToDate = (date) => {
-        this.props.updateToDate(date);
+    handleChangeToDate = (toDate) => {
+        this.props.updateToDate(toDate);
     }
 
     render() {

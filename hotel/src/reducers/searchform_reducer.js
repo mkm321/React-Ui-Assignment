@@ -2,8 +2,8 @@ import { UPDATE_FORM } from "../actions/types";
 
 const INITIAL_STATE = {
 	hotelName: "",
-	fromDate: "",
-	toDate: "",
+	fromDate: null,
+	toDate: null,
 	disabledToDate: true
 }
 

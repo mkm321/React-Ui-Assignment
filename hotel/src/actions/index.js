@@ -27,7 +27,7 @@ export const updateFromDate = (fromDate, toDate, disabledToDate) => {
     return {
         type: UPDATE_FORM,
         payload: {
-            fromDate, 
+            fromDate,
             toDate,
             disabledToDate
         }
@@ -64,7 +64,7 @@ export const getHotels = () => {
 export const searchHotels = ({ hotelName, fromDate, toDate, list }) => {
     if(hotelName === undefined)
         hotelName = "";
-    if((fromDate === "" && toDate === "") || (fromDate === undefined && toDate === undefined))
+    if((fromDate === null && toDate === null) || (fromDate === undefined && toDate === undefined))
         fromDate = toDate = moment();
 
     const available = filterAvailableHotels(hotelName, fromDate, toDate, list);
