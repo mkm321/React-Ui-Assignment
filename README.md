@@ -1,7 +1,9 @@
 # Comfistay - 1.0
 
 	Hotels Search Website
-
+	
+	This is the Demo link where you can see the UI design and functionality :- http://13.127.135.196:3000/
+	
 	Install Nodejs LTS version from https://nodejs.org/en/
 
 	Install create-react-app : npm install -g create-react-app
